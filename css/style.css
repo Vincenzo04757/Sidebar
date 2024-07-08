@@ -1,0 +1,98 @@
+:root{
+    --bg-color: #fff685;
+    --sec-bg-color: #004987;
+    --main-bg-color: #00ddff;
+    --sec-main-color: navy;
+    --color: #f75990;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: 100vh;
+}
+.sidebar-btn-bar {
+    position: fixed;
+    top: 0;
+    bottom: 10px;
+    left: 2px;
+    height: 40px;
+    width: 100vw;
+    margin: 0;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+}
+.btn-trigger {
+    cursor: pointer;
+    background-color: var(--sec-bg-color);
+    border: 0;
+    border-radius: 50%;
+    color: #11c592;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin-left: 2px;
+}
+.btn-trigger:hover {
+    background-color: var(--sec-bg-color);
+}
+.btn-trigger img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 40px; /* Adjust based on sidebar-btn-bar height */
+    bottom: 0;
+    background-color: var(--color);
+    width: 0; /* Start with width of 0 */
+    overflow-x: hidden;
+    transition: width 0.5s; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100; /* Ensure it's above main content */
+    color: var(--main-bg-color);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%; /* Ensure list items stay visible */
+}
+nav ul li {
+    padding: 15px;
+    position: relative;
+}
+nav ul li a {
+    color: var(--sec-main-color);
+    transition: all 0.5s;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li a:hover {
+    color: var(--bg-color);
+.menu-text {
+    width: 150px;
+    display: none; /* Hide text initially */
+}
+.text {
+    margin-top: 50px; /* Added margin from the top */
+    background-color: #770707;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+   
+}
